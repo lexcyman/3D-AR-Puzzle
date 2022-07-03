@@ -1,0 +1,17 @@
+#gamelab-logo {
+    max-width: 6%;
+    height: auto;
+}
+
+#dlsu-css-logo {
+    max-width: 15%;
+    height: auto;
+}
+
+.logos-div {
+    margin: 0 0 1rem 0;
+}
+
+.justify-text {
+    text-align: justify;
+}
