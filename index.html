@@ -89,40 +89,35 @@
             <section class="resume-section" id="research-overview">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Research Overview</h2>
-                    <div class="subheading mb-3">Play Area Setup</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
+                    <div class="subheading mb-3">Scanning the markers</div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <p class="lead mb-5 justify-text">
+                                The physical markers used were selected based on common household items, so that it would be easily accessible to the user. In scanning the markers different methods were used, box markers were scanned by taking a picture of the 6 sides and uploaded them to the vuforia database online. Scanning cylindrical objects needs a picture of the whole side. For the car marker it was scanned using Vuforia's mobile scanning application.
+                            </p>
+                            *picture of marker scannings*
+                        </div>
+                    </div>
+                    <div class="subheading mb-3">Dynamic Distribution</div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <p class="lead mb-5 justify-text">
+                                Dynamically distributing the puzzle pieces is done once the the player has selected the number of markers to be used. Once selected, the number of pieces are then divided by the selected number and randomly attached to a parent container. These containers are then attached to the scanned markers in the order of which they are scanned.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="subheading mb-3">Solving the puzzle</div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <p class="lead mb-5 justify-text">
+                                In determening whether the puzzle is solved, there are 5 conditions that must be met. First is the distance between the Physical marker and the camera, secondly the distance of the marker to the anchor, third the placement of the marker around the anchor, fourth the orientation of marker based on its x y z coordinate, and fifth the height of the camera with respect to the anchor. Once a marker is has satisfied all 5 conditions, it's puzzle pieces in the virtual space will attach to the anchor's puzzle pieces. Once all puzzle pieces from the different markers are attched to the anchor the puzzle will be solved.
+                            </p>
+                            <p class="lead mb-5 justify-text">
+                                The values for these conditions were determined based on how we set up the markers. The markers are set to make sure they are easily visible to the camera to minimize miscalibrations. This is done by making the correct orientation and position of the marker would be the one that is easily detected, such as the side of the marker with the most features. Once we have the markers in position, we take the values from Vuforia's marker detection and set them as the correct values. To make it easier to solve the puzzle and account for some miscalibration, we have added a margin of error where the condition will still complete if it is within this value from the correct one.
+                            </p>
+                            *picture of debug mode*
+                        </div>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -131,40 +126,17 @@
             <section class="resume-section" id="system-overview">
                 <div class="resume-section-content">
                     <h2 class="mb-5">System Overview</h2>
-                    <div class="subheading mb-3">Puzzle Sets</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <p class="lead mb-5 justify-text">
+                                The application is made to be used on an android mobile device using Unity and a Vuforia API plug-in. The application currently makes use of a set of physical objects to be used as markers that is stored inside the application. There are 5 puzzle sets available and can be solved using 2 to 5 of any of the markers, the stones marker is necessary to use however as it acts as anchor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="subheading mb-3">Sample Set up with Physical Markers</div>
+                    <img src="assets/img/playarea_setup.png" alt="Play Area" id="play-area">
+
+                    <div class="subheading mb-3">Puzzle Sets </div>
                 </div>
             </section>
             <hr class="m-0" />
