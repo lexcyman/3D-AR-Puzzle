@@ -12,6 +12,11 @@
     height: auto;
 }
 
+#puzzle-img-resize {
+    max-width: 60%;
+    height: auto;
+}
+
 .logos-div {
     margin: 0 0 1rem 0;
 }

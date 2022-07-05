@@ -95,7 +95,6 @@
                             <p class="lead mb-5 justify-text">
                                 The physical markers used were selected based on common household items, so that it would be easily accessible to the user. In scanning the markers different methods were used, box markers were scanned by taking a picture of the 6 sides and uploaded them to the vuforia database online. Scanning cylindrical objects needs a picture of the whole side. For the car marker it was scanned using Vuforia's mobile scanning application.
                             </p>
-                            *picture of marker scannings*
                         </div>
                     </div>
                     <div class="subheading mb-3">Dynamic Distribution</div>
@@ -104,6 +103,7 @@
                             <p class="lead mb-5 justify-text">
                                 Dynamically distributing the puzzle pieces is done once the the player has selected the number of markers to be used. Once selected, the number of pieces are then divided by the selected number and randomly attached to a parent container. These containers are then attached to the scanned markers in the order of which they are scanned.
                             </p>
+                            <img src="assets/img/auto-distribution.png" alt="auto-distribution" id="play-area">
                         </div>
                     </div>
                     <div class="subheading mb-3">Solving the puzzle</div>
@@ -115,7 +115,7 @@
                             <p class="lead mb-5 justify-text">
                                 The values for these conditions were determined based on how we set up the markers. The markers are set to make sure they are easily visible to the camera to minimize miscalibrations. This is done by making the correct orientation and position of the marker would be the one that is easily detected, such as the side of the marker with the most features. Once we have the markers in position, we take the values from Vuforia's marker detection and set them as the correct values. To make it easier to solve the puzzle and account for some miscalibration, we have added a margin of error where the condition will still complete if it is within this value from the correct one.
                             </p>
-                            *picture of debug mode*
+                            <img src="assets/img/photo_2022-07-05_15-40-35.jpg" alt="debug-mode" id="play-area">
                         </div>
                     </div>
                 </div>
@@ -135,8 +135,48 @@
                     </div>
                     <div class="subheading mb-3">Sample Set up with Physical Markers</div>
                     <img src="assets/img/playarea_setup.png" alt="Play Area" id="play-area">
-
+                    <br /><br /><br />
                     <div class="subheading mb-3">Puzzle Sets </div>
+                        <table class="table table-borderless">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <h4>Puzzle Set 1</h4>
+                                </td>
+                                <td>
+                                    <img src="assets/img/puzzle1.png" alt="puzzle1" id="puzzle-img-resize" />
+                                </td>
+                                <td>
+                                    <h4>Puzzle Set 2</h4>
+                                </td>
+                                <td>
+                                    <img src="assets/img/puzzle2.png" alt="puzzle2" id="puzzle-img-resize" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Puzzle Set 3</h4>
+                                </td>
+                                <td>
+                                    <img src="assets/img/puzzle3.png" alt="puzzle3" id="puzzle-img-resize" />
+                                </td>
+                                <td>
+                                    <h4>Puzzle Set 4</h4>
+                                </td>
+                                <td>
+                                    <img src="assets/img/puzzle4.png" alt="puzzle4" id="puzzle-img-resize" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Puzzle Set 5</h4>
+                                </td>
+                                <td>
+                                    <img src="assets/img/puzzle5.png" alt="puzzle5" id="puzzle-img-resize" />
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
                 </div>
             </section>
             <hr class="m-0" />
@@ -147,20 +187,45 @@
                     <h2 class="mb-5">Results</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
+                            <h3 class="mb-0">Average Time to Solve Each Puzzle Set (Mins.)</h3>
+                            <img src="assets/img/Screen Shot 2022-07-05 at 4.11.07 PM.png" alt="table1" id="puzzle-img-resize" />
+                            <img src="assets/img/chart copy.png" alt="chart" id="puzzle-img-resize" />
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
                     </div>
+                    
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
+                            <h3 class="mb-0">Post-Usability Testing Results (Technical and User Setup)</h3>
+                            <img src="assets/img/technical1.png" alt="technical1" id="puzzle-img-resize" />
+                            <img src="assets/img/technical3.png" alt="technical2" id="puzzle-img-resize" />
+                            <img src="assets/img/technical2.png" alt="technical3" id="puzzle-img-resize" />
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                    </div>
+                    <br /><br />
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Post-Usability Testing Results (Awareness of Anamorphic Art)</h3>
+                            <img src="assets/img/awareness.png" alt="awareness" id="puzzle-img-resize" />
+                        </div>
+                    </div>
+                    <br /><br />
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Post-Usability Testing Results (Comparison Between the Prototype and AMON AR)</h3>
+                            <img src="assets/img/comparison.png" alt="comparison" id="puzzle-img-resize" />
+                        </div>
+                    </div>
+                    <br /><br />
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Wilcoxon Signed Rank Test</h3>
+                            <p> μ0 = There are no differences between the sentiments on the 3 criteria of the experi-
+                                enced users and the naive users.</p>
+                            <p>
+                                μ1 = There is a difference between the sentiments on the 3 criteria of the experienced
+                                users and the naive users.</p>
+                            <img src="assets/img/wilcoxon.png" alt="wilcoxon" id="puzzle-img-resize" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -170,46 +235,12 @@
             <section class="resume-section" id="acknowledgements">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Acknowledgements</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
+                    <p>
+                        We would like to express our sincerest gratitude to our adviser Mr. Neil Patrick Del Gallego,
+                        and our esteemed panel, Dr. Florante Salvador and Mr. Neil Romblon, who guided us throughout our 
+                        whole journey and for giving us the opportunity to always improve. We would also like to extend 
+                        our thanks to our friends and family who helped and supported us through the whole process.
+                    </p>
                 </div>
             </section>
         </div>
